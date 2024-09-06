@@ -6,15 +6,10 @@ app = Flask(__name__)
 def hello_world():
     return "<p>Hello, World!</p>"
 
+# EndPoint with @ decorator
 @app.route("/first")
 def hello_world2():
     return "<p>/first path</p>"
-
-# EndPoint with @ decorator
-@app.route("/getname", methods = ['GET', 'POST'])
-def get_name():
-    data = request.get_json()
-    return data
 
 
 if __name__== "__main__":
