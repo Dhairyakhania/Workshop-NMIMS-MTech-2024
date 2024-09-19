@@ -1,12 +1,12 @@
 FROM python:3.12
 
 WORKDIR /app
-
+COPY . /app
 # Install the application dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Copy in the source code
-COPY . /app
+
 EXPOSE 80
 
 ENV NAME World
