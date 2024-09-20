@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    ports:
+      - "82:82"
+    volumes:
+      - myvolume:/docker-data
+
+volumes:
+  myvolume:
+
+# docker-compose up --build
