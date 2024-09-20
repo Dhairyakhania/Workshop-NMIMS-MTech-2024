@@ -1,0 +1,1 @@
+ydata-profiling: a one-line Exploratory Data Analysis (EDA) experience in a consistent and fast solution.
