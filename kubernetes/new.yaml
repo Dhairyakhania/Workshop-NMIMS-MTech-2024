@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: flask-statefulset
+spec:
+  serviceName: "nginx"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx 
+  template:
+    metadata:
+      labels:
+        app: nginx 
+    spec:
+      containers:
+      - name: flask
+        image: ajinkyakolhe112/flask-app:latest
+        ports:
+        - containerPort: 5000
+          name: web
+        volumeMounts:
+        - name: flask-storage
+          mountPath: /mnt/data
+  volumeClaimTemplates:
+  - metadata:
+      name: flask-storage
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      storageClassName: "my-storage-class"
+      resources:
+        requests:
+          storage: 1G

@@ -1,0 +1,9 @@
+- kubectl apply -f pv.yaml
+- kubectl apply -f statefulset.yaml
+-  kubectl get pods
+-  kubectl get statefulsets
+-  kubectl get pv
+-  kubectl get pvc
+-  kubectl get services
+-  kubectl get ingress
+-  kubectl port-forward svc/flask-service 8080:80
