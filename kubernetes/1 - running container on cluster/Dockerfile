@@ -1,7 +1,9 @@
 FROM python:3.12
 
-WORKDIR /app
 COPY . /app
+# COPY before using the code
+WORKDIR /app
+
 # Install the application dependencies
 RUN pip install -r requirements.txt
 

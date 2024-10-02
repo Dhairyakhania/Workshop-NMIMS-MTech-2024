@@ -6,15 +6,15 @@ Step 1: Installation
     - yum install docker-buildx-plugin
 
 Step 2: Building docker image
-Run via `docker buildx build --tag my-python-app .` 
-or `docker build --tag myflaskapp:latest .`
+Run via `docker build --tag my-python-app .`
+or future: `docker-compose up --build`
 
-Step 3: Login & run docker
-- `docker login`
+Step 3: Run docker
 - start docker by running `dockerd`
 - `docker run -d -p 80:80 first-docker-image`
 
 Step 4: Upload docker image for public sharing
+- `docker login`
 - `docker tag my-python-app first-docker-image`
 - `docker push              first-docker-image`
 - `docker pull first-docker-image`

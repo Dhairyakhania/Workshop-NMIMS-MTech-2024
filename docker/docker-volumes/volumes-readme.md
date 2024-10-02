@@ -1,0 +1,2 @@
+- create docker volume by `docker volume create mounted_volume`
+- run docker container with mountaed volume `docker run -v mounted_volume:/data -it ubuntu`

@@ -4,9 +4,9 @@ services:
     ports:
       - "82:82"
     volumes:
-      - myvolume:/docker-data
+      - mounted_volume:/docker-data
 
 volumes:
-  myvolume:
+  mounted_volume:
 
 # docker-compose up --build
