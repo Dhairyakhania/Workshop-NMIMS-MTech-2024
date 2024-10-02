@@ -1,3 +1,10 @@
+## Docker Revision
+- Running a container `docker run -it ubuntu` or `docker run -it busybox`. Busy box is small size linux container. Busybox = 5MB, ubuntu is larger in size = 78MB.
+    - Busybox vs Puppy Linux vs Tiny Core Linux vs Lubuntu 
+- Getting details of running containers `docker ps`
+- Important commands - `ps, images, run, start, stop, build, pull, push, `
+
+
 ## Lab 1: Using docker
 Step 1: Installation
     Require docker buildx to build docker image
@@ -7,15 +14,16 @@ Step 1: Installation
 
 Step 2: Building docker image
 Run via `docker build --tag my-python-app .`
-or future: `docker-compose up --build`
+or build & run: `docker-compose up --build`
 
 Step 3: Run docker
-- start docker by running `dockerd`
+- start docker service by running `dockerd`
+- Different ways of running: `docker run busybox` vs `docker run -it busybox` vs `docker run -d busybox`
 - `docker run -d -p 80:80 first-docker-image`
 
 Step 4: Upload docker image for public sharing
 - `docker login`
-- `docker tag my-python-app first-docker-image`
+- `docker --tag my-python-app first-docker-image`
 - `docker push              first-docker-image`
 - `docker pull first-docker-image`
 

@@ -1,9 +1,3 @@
-## Docker Revision
-- Running a container `docker run -it ubuntu` or `docker run -it busybox`. Busy box is small size linux container = 5MB, ubuntu is larger in size = 78MB.
-- Getting details of running containers `docker ps`
-- Important commands - `ps, images, run, start, stop, build, pull, push, `
-
-
 # Kubernetes Install Instructions
 1. VSCode -> Extensions install  `Docker & Kubernetes extension`
 2. VSCode -> Docker Extension -> Login to `hub.docker.com` & use private token to sign in from code space

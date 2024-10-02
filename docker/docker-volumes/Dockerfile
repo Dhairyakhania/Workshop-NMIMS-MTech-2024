@@ -7,6 +7,6 @@ RUN pip install -r requirements.txt
 
 # Copy in the source code
 
-EXPOSE 80
+EXPOSE 5000
 
-CMD ["python", "app.py", ]
+CMD ["python", "flask_app.py" ]

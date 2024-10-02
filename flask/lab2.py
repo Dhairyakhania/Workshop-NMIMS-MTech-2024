@@ -2,6 +2,10 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
+@app.route("/")
+def default_print():
+    return "<p>Default Print message: = Hello, World!</p>"
+
 @app.route("/getname", methods = ['GET', 'POST'])
 def get_name():
     data = request.json()
