@@ -7,9 +7,14 @@ app = Flask(__name__)
 def hello_world():
     return  f'Hello World'
 
+@app.route("/ls")
+def list_files():
+    file_content = open("/app/local_directory/message.txt").read()
+    return file_content
+
 if __name__== "__main__":
     # With app.run, you can directly run this as a python script
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", port=5000)
 
 # Running the app
 # RUNNING THE APP: python -m flask --app flask/lab1_quickstart.py run
