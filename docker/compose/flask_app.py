@@ -14,7 +14,7 @@ def hello_world2():
 
 if __name__== "__main__":
     # With app.run, you can directly run this as a python script
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
 
 # Running the app
 # RUNNING THE APP: python -m flask --app flask/lab1_quickstart.py run
