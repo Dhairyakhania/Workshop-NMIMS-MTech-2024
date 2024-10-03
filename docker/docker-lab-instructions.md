@@ -3,6 +3,9 @@
     - Busybox vs Puppy Linux vs Tiny Core Linux vs Lubuntu 
 - Getting details of running containers `docker ps`
 - Important commands - `ps, images, run, start, stop, build, pull, push, `
+- `docker ps`
+    - Show currently running containers -> `docker ps`
+    - Shows running and stopped containers with size ->`docker ps -as`
 - Running a demo container: `docker run busybox` vs `docker run -it busybox` vs `docker run -d busybox`
 - Running a demo container: `docker run ubuntu` vs `docker run -it ubuntu` vs `docker run -d ubuntu`
 
