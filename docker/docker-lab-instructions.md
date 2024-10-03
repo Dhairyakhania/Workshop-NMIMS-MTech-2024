@@ -6,6 +6,8 @@
 - `docker ps`
     - Show currently running containers -> `docker ps`
     - Shows running and stopped containers with size ->`docker ps -as`
+- `docker image ls` or `docker images` both show list of running images. 
+- `docker image <options>` docker image has different options
 - Running a demo container: `docker run busybox` vs `docker run -it busybox` vs `docker run -d busybox`
 - Running a demo container: `docker run ubuntu` vs `docker run -it ubuntu` vs `docker run -d ubuntu`
 
