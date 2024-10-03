@@ -2,7 +2,7 @@ services:
   web:
     build: .
     ports:
-      - "5000:5000"
+      - "5003:5003"
     volumes:
       - local_directory:/mounted_directory_in_container
 

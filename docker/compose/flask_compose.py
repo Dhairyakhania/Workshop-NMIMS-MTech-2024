@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<p>Hello, World. Container run with docker-compose up --build command</p>"
 
 # EndPoint with @ decorator
 @app.route("/first")
@@ -14,7 +14,7 @@ def hello_world2():
 
 if __name__== "__main__":
     # With app.run, you can directly run this as a python script
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5002)
 
 # Running the app
 # RUNNING THE APP: python -m flask --app flask/lab1_quickstart.py run

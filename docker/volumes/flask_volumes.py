@@ -5,7 +5,7 @@ app = Flask(__name__)
 # EndPoint with @ decorator
 @app.route("/")
 def hello_world():
-    return  f'Hello World'
+    return  f'Hello World: Docker Volumes Lab. (available endpoint /ls to see local content)'
 
 @app.route("/ls")
 def list_files():
@@ -14,7 +14,7 @@ def list_files():
 
 if __name__== "__main__":
     # With app.run, you can directly run this as a python script
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5003)
 
 # Running the app
 # RUNNING THE APP: python -m flask --app flask/lab1_quickstart.py run
