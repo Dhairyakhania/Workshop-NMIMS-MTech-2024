@@ -2,3 +2,4 @@ flask/__pycache__/demo.cpython-312.pyc
 flask/__pycache__/lab1_quickstart.cpython-312.pyc
 flask/__pycache__/quickstart.cpython-312.pyc
 .DS_Store
+.vscode
