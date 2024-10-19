@@ -1,0 +1,3 @@
+- isstall airbyte locally by `curl -LsfS https://get.airbyte.com | bash -`
+- run airbyte locally by `abctl local install`
+- get password by `abctl local credentials`
