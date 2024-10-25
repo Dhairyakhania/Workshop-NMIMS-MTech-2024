@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: kubernetes_nginx_2
+    ports:
+      - "5002:5002"
+
+# docker-compose up --build
